@@ -1,0 +1,20 @@
+{
+  "name": "Google Inbox Nav White",
+  "version": "0.0.1",
+  "manifest_version" : 2,
+  "description": "Google Inbox Nav White",
+  "permissions": [
+    "https://inbox.google.com/*"
+  ],
+  "icons": {
+    "16" : "icon-16.png",
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://inbox.google.com/*"],
+      "css" : ["style.css"]
+    }
+  ]
+}
